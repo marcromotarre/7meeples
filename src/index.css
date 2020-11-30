@@ -18,6 +18,11 @@ code {
 }
 
 @font-face {
+  font-family: "Poppins-Thin";
+  src: url(./fonts/poppins/Poppins-Thin.ttf) format("truetype");
+}
+
+@font-face {
   font-family: "Big-Shoulders";
   src: url(./fonts/big_shoulders/BigShouldersStencilDisplay-Regular.ttf)
     format("truetype");
