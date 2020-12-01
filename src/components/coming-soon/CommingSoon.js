@@ -17,7 +17,6 @@ const Proximamente = styled.div`
   justify-content: center;
   p {
     font-family: Poppins-Thin;
-    font-weight: 300;
     padding: 0;
     margin: 0;
     font-size: 40px;
@@ -67,19 +66,18 @@ const Proximamente = styled.div`
 
 function CommingSoon() {
   const colors = [
-    { name: "red", shadow_color: "#EC564A", color: "#EA4335" },
-    { name: "blue", shadow_color: "#5591F5", color: "#4285F4" },
-    { name: "green", shadow_color: "#49B165", color: "#EA4335" },
-    { name: "yellow", shadow_color: "#FCC31E", color: "#34A853" },
-    { name: "black", shadow_color: "#1A1A1A", color: "#000000" }
+    { name: "red" },
+    { name: "blue" },
+    { name: "green" },
+    { name: "yellow" },
+    { name: "black" }
   ];
   var randomNumber = Math.floor(Math.random() * colors.length);
   const svgName = `sevenmeeples${colors[randomNumber].name}.svg`;
 
   const size = useWindowSize();
-  const shadow_grey = "#C4C4C4";
-  const grey = "#B5B5B5";
 
+  const meepleHeight = size.height * 0.6;
   const meepleWidth = size.width * 0.6;
   const aspect_ratio = 1.14;
 
@@ -90,8 +88,8 @@ function CommingSoon() {
         aria-label="7 meeples"
         role="img"
         beforeInjection={svg => {
-          svg.setAttribute("style", `width: ${meepleWidth}`);
-          svg.setAttribute("style", `height: ${meepleWidth * aspect_ratio}`);
+          svg.setAttribute("style", `height: ${meepleHeight}`);
+          svg.setAttribute("style", `width: ${meepleHeight / aspect_ratio}`);
         }}
       />
       <Proximamente>
