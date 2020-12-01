@@ -21,7 +21,47 @@ const Proximamente = styled.div`
     padding: 0;
     margin: 0;
     font-size: 40px;
-    color: ${props => props.lettercolor};
+  }
+  .grey {
+    color: #b5b5b5;
+  }
+  .grey-shadow {
+    color: #c4c4c4;
+  }
+
+  .red {
+    color: #ea4335;
+  }
+  .red-shadow {
+    color: #ec564a;
+  }
+
+  .yellow {
+    color: #fbf205;
+  }
+  .yellow-shadow {
+    color: #fcf31e;
+  }
+
+  .blue {
+    color: #4285f4;
+  }
+  .blue-shadow {
+    color: #5591f5;
+  }
+
+  .green {
+    color: #ea4335;
+  }
+  .green-shadow {
+    color: #49b165;
+  }
+
+  .black {
+    color: #000000;
+  }
+  .black-shadow {
+    color: #1a1a1a;
   }
 `;
 
@@ -55,20 +95,10 @@ function CommingSoon() {
         }}
       />
       <Proximamente>
-        <p lettercolor={shadow_grey}>PROX</p>
-        <p lettercolor={grey}>IM</p>
-        <p
-          colorname={colors[randomNumber].name}
-          lettercolor={`rgb(52, 168, 83)`}
-        >
-          AME
-        </p>
-        <p
-          colorname={colors[randomNumber].name}
-          lettercolor={colors[randomNumber].color}
-        >
-          NTE
-        </p>
+        <p className={"grey-shadow"}>PROX</p>
+        <p className={"grey"}>IM</p>
+        <p className={`${colors[randomNumber].name}-shadow`}>AME</p>
+        <p className={`${colors[randomNumber].name}`}>NTE</p>
       </Proximamente>
     </Container>
   );

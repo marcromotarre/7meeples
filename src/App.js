@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.scss";
 import React from "react";
 import { useRoutes } from "hookrouter";
 import BoardGameManager from "./components/board-game-manager/BoardGameManager";
@@ -10,7 +10,7 @@ const routes = {
   "/": () => <CommingSoon />,
   "/home": () => <Home />,
   "/board-game-manager": () => <BoardGameManager />,
-  "/not-found": () => <NotFound />,
+  "/not-found": () => <NotFound />
   //'/products/:id': ({id}) => <ProductDetails id={id} />
 };
 
