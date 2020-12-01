@@ -1,7 +1,6 @@
 {
   "name": "board-games-shop",
   "version": "0.1.2",
-  "private": true,
   "dependencies": {
     "@paypal/react-paypal-js": "^3.0.1",
     "@testing-library/jest-dom": "^5.11.4",
