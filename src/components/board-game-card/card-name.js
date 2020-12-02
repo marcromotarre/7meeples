@@ -6,7 +6,7 @@ const CardNameContainer = styled.div`
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  margin-left: 10px;
+  margin-left: 30px;
   p {
     font-family: Poppins;
     font-size: 24px;

@@ -15,7 +15,7 @@ const CardTitle = styled.div`
   justify-content: space-between;
   align-items: center;
   height: 50px;
-  width: 95%;
+  width: 80%;
   p {
     font-family: Poppins-Thin;
     padding: 0;

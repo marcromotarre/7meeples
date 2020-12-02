@@ -5,11 +5,11 @@ import styled, { css } from "styled-components";
 const CardImageContainer = styled.div`
   width: 100%;
   display: flex;
+  
   justify-content: center;
   align: items: center;
-
   img {
-      width: 90%;
+    width: 80%;
   }
 `;
 

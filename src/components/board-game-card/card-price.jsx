@@ -6,7 +6,7 @@ const CardPriceContainer = styled.div`
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  margin-left: 10px;
+  margin-left: 30px;
   p {
     font-family: Poppins-Thin;
     padding: 0;

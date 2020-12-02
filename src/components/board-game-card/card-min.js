@@ -8,14 +8,16 @@ import CardPrice from "./card-price";
 import CardMainAction from "./card-main-action";
 const CardContainer = styled.div`
   width: 100%;
-  border: 0.5px solid #b5b4b4;
   border-radius: 10px;
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
 `;
 
 const Separator = styled.div`
   width: 100%;
   height: 0.5px;
-  background-color: #b5b4b4;
+  background-color: rgba(181, 181, 181, 0.5);
 `;
 
 const numberOfPlayers = {
@@ -24,9 +26,9 @@ const numberOfPlayers = {
   height: 20
 };
 
-function CardMin({ name, icon }) {
+function CardMin({ className, name, icon }) {
   return (
-    <CardContainer>
+    <CardContainer className={className}>
       <CardImage
         img={"https://m.media-amazon.com/images/I/51iYSRyQF2L._AC_SY355_.jpg"}
       ></CardImage>

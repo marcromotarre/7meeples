@@ -7,7 +7,7 @@ import NotFound from "./components/not-found/NotFound";
 import CommingSoon from "./components/coming-soon/CommingSoon";
 
 const routes = {
-  "/": () => <CommingSoon />,
+  "/": () => <Home />,
   "/home": () => <Home />,
   "/board-game-manager": () => <BoardGameManager />,
   "/not-found": () => <NotFound />
